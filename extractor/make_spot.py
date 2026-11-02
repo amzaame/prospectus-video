@@ -52,10 +52,10 @@ def main():
     ap.add_argument("--sticker-text", default="#d0021b", help="sticker text colour")
     ap.add_argument("--style", default="carrefour", help="brand style preset in video/src/brand.ts (carrefour, leclerc)")
     ap.add_argument("--dates", help='date pill text, e.g. "DU MARDI 27 OCTOBRE|AU LUNDI 9 NOVEMBRE 2026"')
-    ap.add_argument("--tagline", default="ON A TOUS DROIT|AU MEILLEUR")
-    ap.add_argument("--cta", default="TÉLÉCHARGEZ|L'APPLICATION")
-    ap.add_argument("--legal", default="Pour votre santé, mangez au moins cinq fruits et légumes par jour. "
-                                       "Plus d'informations sur www.mangerbouger.fr")
+    # no defaults: every retailer has its own slogan and the catalogue prints its own legal mention
+    ap.add_argument("--tagline", required=True, help='retailer slogan, lines split by "|"')
+    ap.add_argument("--cta", required=True, help='call to action, e.g. "COMMANDEZ SUR|AUCHAN.FR"')
+    ap.add_argument("--legal", required=True, help="mandatory mention printed in the catalogue (health, alcohol)")
     ap.add_argument("--pdf", help="source PDF (only needed to crop the logo)")
     ap.add_argument("--logo-page", type=int, default=1)
     ap.add_argument("--logo-rect", help="x0,y0,x1,y1 in PDF points")

@@ -63,7 +63,9 @@ PDF ──extract.py──▶ video/public/catalog/   offers.json · fonts.json 
 
 ```bash
 .venv/bin/python extractor/make_spot.py --catalog catalog --style carrefour --ids p010_01 p021_01 p018_00 p005_00 \
-  --dates "DU MARDI 27 OCTOBRE|AU LUNDI 9 NOVEMBRE 2026" --bg "#a3263c"
+  --dates "DU MARDI 27 OCTOBRE|AU LUNDI 9 NOVEMBRE 2026" --bg "#a3263c" \
+  --tagline "ON A TOUS DROIT|AU MEILLEUR" --cta "TÉLÉCHARGEZ|L'APPLICATION" \
+  --legal "Pour votre santé, mangez au moins cinq fruits et légumes par jour. www.mangerbouger.fr"
 # ou auto : --count 4 [--pages 10,18,21]
 # logo : --pdf catalogue.pdf --logo-page 1 --logo-rect 14,28,236,68
 ```
