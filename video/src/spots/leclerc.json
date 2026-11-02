@@ -1,0 +1,211 @@
+{
+  "cover": "leclerc/pages/p001.jpg",
+  "coverAspect": 0.7649402390438247,
+  "dates": [
+    "DU 20 OCTOBRE",
+    "AU 5 DÉCEMBRE 2026"
+  ],
+  "theme": {
+    "bg": "#0066cc",
+    "accent": "#ffcc01",
+    "stickerText": "#0f1e6b",
+    "style": "leclerc"
+  },
+  "logo": "leclerc/logo.png",
+  "tagline": [
+    "TOUT CE QUI COMPTE POUR VOUS",
+    "EXISTE À PRIX E.LECLERC"
+  ],
+  "cta": [
+    "COMMANDEZ EN",
+    "CLICK & COLLECT"
+  ],
+  "legal": "* Ticket E.Leclerc crédité sur votre carte de fidélité, utilisable dès le lendemain. Voir modalités en magasin.",
+  "offers": [
+    {
+      "id": "pat_patrouilleur",
+      "page": 11,
+      "name": "Véhicule interactif",
+      "brand": "CAMION PAT'PATROUILLEUR",
+      "description": "Se transforme en quartier général mobile. Dès 3 ans.",
+      "loyalty": "",
+      "badge": null,
+      "price": {
+        "int": "59",
+        "cents": "90",
+        "value": 59.9,
+        "caption": [
+          "L'ensemble"
+        ]
+      },
+      "oldPrice": null,
+      "image": {
+        "src": "leclerc/products/pat_patrouilleur.png",
+        "width": 990,
+        "height": 406
+      },
+      "region": [
+        0.05,
+        0.04,
+        0.62,
+        0.46
+      ],
+      "pageImage": "leclerc/pages/p011.jpg",
+      "pageAspect": 0.7649402390438247
+    },
+    {
+      "id": "fort_boyard",
+      "page": 64,
+      "name": "Jeu d'aventure",
+      "brand": "FORT BOYARD ÉDITION AVENTURE",
+      "description": "",
+      "loyalty": "",
+      "badge": {
+        "kind": "amount",
+        "headline": "4€80",
+        "sub": "EN TICKET E.LECLERC",
+        "text": ""
+      },
+      "price": {
+        "int": "23",
+        "cents": "10",
+        "value": 23.1,
+        "caption": [],
+        "label": "TICKET E.LECLERC COMPRIS*"
+      },
+      "oldPrice": {
+        "int": "27",
+        "cents": "90",
+        "value": 27.9,
+        "caption": [],
+        "label": "PRIX PAYÉ EN CAISSE"
+      },
+      "image": {
+        "src": "leclerc/products/fort_boyard.png",
+        "width": 1054,
+        "height": 1090
+      },
+      "region": [
+        0.52,
+        0.27,
+        0.96,
+        0.51
+      ],
+      "pageImage": "leclerc/pages/p064.jpg",
+      "pageAspect": 0.7649402390438247
+    },
+    {
+      "id": "minnie",
+      "page": 11,
+      "name": "Téléphone rétro",
+      "brand": "LE TÉLÉPHONE DE MINNIE",
+      "description": "Cadran rotatif, effets sonores et lumineux. Dès 3 ans.",
+      "loyalty": "",
+      "badge": null,
+      "price": {
+        "int": "19",
+        "cents": "90",
+        "value": 19.9,
+        "caption": [
+          "L'unité"
+        ]
+      },
+      "oldPrice": null,
+      "image": {
+        "src": "leclerc/products/minnie.png",
+        "width": 805,
+        "height": 876
+      },
+      "region": [
+        0.46,
+        0.74,
+        0.95,
+        0.955
+      ],
+      "pageImage": "leclerc/pages/p011.jpg",
+      "pageAspect": 0.7649402390438247
+    },
+    {
+      "id": "dessinez",
+      "page": 64,
+      "name": "Jeu de dessin",
+      "brand": "DESSI'NEZ",
+      "description": "",
+      "loyalty": "",
+      "badge": {
+        "kind": "amount",
+        "headline": "3€",
+        "sub": "EN TICKET E.LECLERC",
+        "text": ""
+      },
+      "price": {
+        "int": "15",
+        "cents": "50",
+        "value": 15.5,
+        "caption": [],
+        "label": "TICKET E.LECLERC COMPRIS*"
+      },
+      "oldPrice": {
+        "int": "18",
+        "cents": "50",
+        "value": 18.5,
+        "caption": [],
+        "label": "PRIX PAYÉ EN CAISSE"
+      },
+      "image": {
+        "src": "leclerc/products/dessinez.png",
+        "width": 690,
+        "height": 738
+      },
+      "region": [
+        0.515,
+        0.03,
+        0.96,
+        0.245
+      ],
+      "pageImage": "leclerc/pages/p064.jpg",
+      "pageAspect": 0.7649402390438247
+    },
+    {
+      "id": "escape_game",
+      "page": 64,
+      "name": "Jeu d'énigmes",
+      "brand": "ESCAPE GAME",
+      "description": "",
+      "loyalty": "",
+      "badge": {
+        "kind": "amount",
+        "headline": "5€",
+        "sub": "EN TICKET E.LECLERC",
+        "text": ""
+      },
+      "price": {
+        "int": "20",
+        "cents": "40",
+        "value": 20.4,
+        "caption": [],
+        "label": "TICKET E.LECLERC COMPRIS*"
+      },
+      "oldPrice": {
+        "int": "25",
+        "cents": "40",
+        "value": 25.4,
+        "caption": [],
+        "label": "PRIX PAYÉ EN CAISSE"
+      },
+      "image": {
+        "src": "leclerc/products/escape_game.png",
+        "width": 1273,
+        "height": 1422
+      },
+      "region": [
+        0.05,
+        0.29,
+        0.52,
+        0.51
+      ],
+      "pageImage": "leclerc/pages/p064.jpg",
+      "pageAspect": 0.7649402390438247
+    }
+  ]
+}

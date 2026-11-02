@@ -1,0 +1,136 @@
+{
+  "validity": [
+    "DU 20 OCTOBRE AU 5 DÉCEMBRE 2026"
+  ],
+  "offers": [
+    {
+      "id": "pat_patrouilleur",
+      "page": 11,
+      "name": "Véhicule interactif",
+      "brand": "CAMION PAT'PATROUILLEUR",
+      "description": "Se transforme en quartier général mobile. Dès 3 ans.",
+      "price": "59,90",
+      "caption": [
+        "L'ensemble"
+      ],
+      "productBox": [
+        0.15,
+        0.04,
+        0.57,
+        0.365
+      ],
+      "region": [
+        0.05,
+        0.04,
+        0.62,
+        0.46
+      ],
+      "imageUrl": "https://media.e.leclerc/3459223587763_1?fmt=png-alpha"
+    },
+    {
+      "id": "fort_boyard",
+      "page": 64,
+      "name": "Jeu d'aventure",
+      "brand": "FORT BOYARD ÉDITION AVENTURE",
+      "ticket": {
+        "paid": "27,90",
+        "net": "23,10",
+        "amount": "4€80",
+        "sub": "EN TICKET E.LECLERC",
+        "paidLabel": "PRIX PAYÉ EN CAISSE",
+        "netLabel": "TICKET E.LECLERC COMPRIS*"
+      },
+      "productBox": [
+        0.52,
+        0.32,
+        0.725,
+        0.475
+      ],
+      "region": [
+        0.52,
+        0.27,
+        0.96,
+        0.51
+      ],
+      "imageUrl": "https://media.e.leclerc/3181860750308_1?fmt=png-alpha"
+    },
+    {
+      "id": "minnie",
+      "page": 11,
+      "name": "Téléphone rétro",
+      "brand": "LE TÉLÉPHONE DE MINNIE",
+      "description": "Cadran rotatif, effets sonores et lumineux. Dès 3 ans.",
+      "price": "19,90",
+      "caption": [
+        "L'unité"
+      ],
+      "productBox": [
+        0.46,
+        0.765,
+        0.76,
+        0.955
+      ],
+      "region": [
+        0.46,
+        0.74,
+        0.95,
+        0.955
+      ],
+      "imageUrl": "https://media.e.leclerc/3459223819888_1?fmt=png-alpha"
+    },
+    {
+      "id": "dessinez",
+      "page": 64,
+      "name": "Jeu de dessin",
+      "brand": "DESSI'NEZ",
+      "ticket": {
+        "paid": "18,50",
+        "net": "15,50",
+        "amount": "3€",
+        "sub": "EN TICKET E.LECLERC",
+        "paidLabel": "PRIX PAYÉ EN CAISSE",
+        "netLabel": "TICKET E.LECLERC COMPRIS*"
+      },
+      "productBox": [
+        0.515,
+        0.065,
+        0.715,
+        0.225
+      ],
+      "region": [
+        0.515,
+        0.03,
+        0.96,
+        0.245
+      ],
+      "imageUrl": "https://media.e.leclerc/3760046781017_1?fmt=png-alpha"
+    },
+    {
+      "id": "escape_game",
+      "page": 64,
+      "name": "Jeu d'énigmes",
+      "brand": "ESCAPE GAME",
+      "ticket": {
+        "paid": "25,40",
+        "net": "20,40",
+        "amount": "5€",
+        "sub": "EN TICKET E.LECLERC",
+        "paidLabel": "PRIX PAYÉ EN CAISSE",
+        "netLabel": "TICKET E.LECLERC COMPRIS*"
+      },
+      "productBox": [
+        0.05,
+        0.29,
+        0.27,
+        0.475
+      ],
+      "region": [
+        0.05,
+        0.29,
+        0.52,
+        0.51
+      ],
+      "imageUrl": "https://media.e.leclerc/3262190002241_1?fmt=png-alpha"
+    }
+  ]
+}

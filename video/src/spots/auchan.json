@@ -1,0 +1,245 @@
+{
+  "cover": "auchan/pages/p001.jpg",
+  "coverAspect": 0.7166666128370675,
+  "dates": [
+    "DU MARDI 27 OCTOBRE",
+    "AU DIMANCHE 1ER NOVEMBRE 2026"
+  ],
+  "theme": {
+    "bg": "#e0001a",
+    "accent": "#ffffff",
+    "stickerText": "#e0001a",
+    "style": "auchan"
+  },
+  "logo": "auchan/logo.png",
+  "tagline": [
+    "25 JOURS AUCHAN,",
+    "GAGNEZ À TOUS LES COUPS"
+  ],
+  "cta": [
+    "RETROUVEZ VOS OFFRES",
+    "SUR AUCHAN.FR"
+  ],
+  "legal": "Pour votre santé, évitez de grignoter entre les repas. www.mangerbouger.fr",
+  "offers": [
+    {
+      "id": "p007_00",
+      "page": 7,
+      "name": "Chips nature maxi format",
+      "brand": "LAY'S",
+      "description": "370 g Soit le kg : Vendu seul : Par 2 : Existe d'autres variétés",
+      "loyalty": "",
+      "badge": {
+        "text": "60% SUR LE 2ÈME",
+        "kind": "percent",
+        "bbox": [
+          194.3070068359375,
+          53.1300048828125,
+          289.3841247558594,
+          133.2353973388672
+        ],
+        "headline": "60%",
+        "sub": "SUR LE 2ÈME"
+      },
+      "price": {
+        "int": "2",
+        "cents": "75",
+        "value": 2.75,
+        "caption": [
+          "Le 2ème produit : 1€10"
+        ]
+      },
+      "oldPrice": null,
+      "image": {
+        "src": "auchan/products/p007_00.png",
+        "width": 520,
+        "height": 766
+      },
+      "region": [
+        0.0372,
+        0.0625,
+        0.4748,
+        0.6137
+      ],
+      "pageImage": "auchan/pages/p007.jpg",
+      "pageAspect": 0.7166666128370675
+    },
+    {
+      "id": "p034_02",
+      "page": 34,
+      "name": "Tablettes de chocolat au lait",
+      "brand": "MILKA",
+      "description": "Le lot de 6 x 100 g Soit le kg : compte waaoh! Existe d'autres variétés",
+      "loyalty": "",
+      "badge": {
+        "kind": "percent",
+        "headline": "25%",
+        "sub": "SUR VOTRE COMPTE WAAOH!",
+        "text": ""
+      },
+      "price": {
+        "int": "6",
+        "cents": "29",
+        "value": 6.29,
+        "caption": [
+          "Le lot de 6 x 100 g · cagnotte déduite"
+        ]
+      },
+      "oldPrice": null,
+      "image": {
+        "src": "auchan/products/p034_02.png",
+        "width": 296,
+        "height": 697
+      },
+      "region": [
+        0.3752,
+        0.3583,
+        0.6374,
+        0.618
+      ],
+      "pageImage": "auchan/pages/p034.jpg",
+      "pageAspect": 0.7166666128370675
+    },
+    {
+      "id": "p054_00",
+      "page": 54,
+      "name": "Doudoune femme ou homme",
+      "brand": "INEXTENSO",
+      "description": "100% polyester, doublure 100% polyester, garnissage 100% polyester recyclé Du S au 3XL",
+      "loyalty": "",
+      "badge": {
+        "text": "5€ DE REMISE IMMÉDIATE",
+        "kind": "amount",
+        "bbox": [
+          50.847660064697266,
+          242.68780517578125,
+          83.33837890625,
+          288.99041748046875
+        ],
+        "headline": "5€",
+        "sub": "DE REMISE IMMÉDIATE"
+      },
+      "price": {
+        "int": "34",
+        "cents": "99",
+        "value": 34.99,
+        "caption": [
+          "Du S au XXL"
+        ]
+      },
+      "oldPrice": {
+        "int": "39",
+        "cents": "99",
+        "value": 39.99,
+        "caption": []
+      },
+      "image": {
+        "src": "auchan/products/p054_00_lift.png",
+        "width": 691,
+        "height": 1262
+      },
+      "region": [
+        0.0654,
+        0.1181,
+        0.6326,
+        0.4999
+      ],
+      "pageImage": "auchan/pages/p054.jpg",
+      "pageAspect": 0.7166666128370675
+    },
+    {
+      "id": "p062_04",
+      "page": 62,
+      "name": "TV LED 85\" / 214 cm",
+      "brand": "SAMSUNG",
+      "description": "Réf. 552464 Garantie 2 ans",
+      "loyalty": "",
+      "badge": {
+        "text": "150€ DE REMISE IMMÉDIATE",
+        "kind": "amount",
+        "bbox": [
+          257.1014099121094,
+          748.8717651367188,
+          296.4992980957031,
+          785.1317749023438
+        ],
+        "headline": "150€",
+        "sub": "DE REMISE IMMÉDIATE"
+      },
+      "price": {
+        "int": "849",
+        "cents": "",
+        "value": 849.0,
+        "caption": [
+          "Dont 17€ d'éco-participation"
+        ]
+      },
+      "oldPrice": {
+        "int": "999",
+        "cents": "",
+        "value": 999.0,
+        "caption": []
+      },
+      "image": {
+        "src": "auchan/products/p062_04.png",
+        "width": 1008,
+        "height": 617
+      },
+      "region": [
+        0.0605,
+        0.67,
+        0.4865,
+        0.9334
+      ],
+      "pageImage": "auchan/pages/p062.jpg",
+      "pageAspect": 0.7166666128370675
+    },
+    {
+      "id": "p005_00",
+      "page": 5,
+      "name": "Aspirateur balai laveur",
+      "brand": "ROWENTA",
+      "description": "Réservoir d'eau 730 ml Réf.313393 - Garantie 2 ans",
+      "loyalty": "",
+      "badge": {
+        "text": "50€ DE REMISE IMMÉDIATE",
+        "kind": "amount",
+        "bbox": [
+          146.21470642089844,
+          296.1363525390625,
+          221.45526123046875,
+          388.741455078125
+        ],
+        "headline": "50€",
+        "sub": "DE REMISE IMMÉDIATE"
+      },
+      "price": {
+        "int": "149",
+        "cents": "99",
+        "value": 149.99,
+        "caption": [
+          "Réservoir d'eau 730 ml"
+        ]
+      },
+      "oldPrice": {
+        "int": "199",
+        "cents": "99",
+        "value": 199.99,
+        "caption": []
+      },
+      "image": {
+        "src": "auchan/products/p005_00.png",
+        "width": 271,
+        "height": 499
+      },
+      "region": [
+        0.0372,
+        0.3482,
+        0.4626,
+        0.6965
+      ],
+      "pageImage": "auchan/pages/p005.jpg",
+      "pageAspect": 0.7166666128370675
+    }
+  ]
+}

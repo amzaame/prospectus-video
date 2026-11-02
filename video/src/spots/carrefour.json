@@ -1,0 +1,201 @@
+{
+  "cover": "catalog/pages/p001.jpg",
+  "coverAspect": 0.5964915329224201,
+  "dates": [
+    "DU MARDI 27 OCTOBRE",
+    "AU LUNDI 9 NOVEMBRE 2026"
+  ],
+  "theme": {
+    "bg": "#a3263c",
+    "accent": "#ffd400",
+    "stickerText": "#d0021b"
+  },
+  "logo": "catalog/logo.png",
+  "tagline": [
+    "ON A TOUS DROIT",
+    "AU MEILLEUR"
+  ],
+  "cta": [
+    "TÉLÉCHARGEZ",
+    "L'APPLICATION"
+  ],
+  "legal": "Pour votre santé, mangez au moins cinq fruits et légumes par jour. Plus d'informations sur www.mangerbouger.fr",
+  "offers": [
+    {
+      "id": "p010_01",
+      "page": 10,
+      "name": "Single Malt Scotch Whisky",
+      "brand": "GLEN TURNER",
+      "description": "",
+      "loyalty": "",
+      "badge": {
+        "text": "2€ DE REMISE IMMÉDIATE",
+        "kind": "amount",
+        "bbox": [
+          19.899799346923828,
+          435.6127014160156,
+          64.44924926757812,
+          483.4169921875
+        ],
+        "headline": "2€",
+        "sub": "DE REMISE IMMÉDIATE"
+      },
+      "price": {
+        "int": "22",
+        "cents": "85",
+        "value": 22.85,
+        "caption": []
+      },
+      "oldPrice": {
+        "int": "24",
+        "cents": "85",
+        "value": 24.85,
+        "caption": [
+          "Le L : 35,50 €"
+        ]
+      },
+      "image": {
+        "src": "catalog/products/p010_01.png",
+        "width": 185,
+        "height": 622
+      },
+      "region": [
+        0.0412,
+        0.4807,
+        0.4591,
+        0.6942
+      ],
+      "pageImage": "catalog/pages/p010.jpg",
+      "pageAspect": 0.5964915329224201
+    },
+    {
+      "id": "p021_01",
+      "page": 21,
+      "name": "Huîtres creuses",
+      "brand": "FILIERE QUALITE CARREFOUR",
+      "description": "La bourriche de 2 douzaines, soit 2,5 kg.",
+      "loyalty": "Au rayon Poissonnerie libre-service",
+      "badge": {
+        "text": "-25% DE REMISE IMMÉDIATE",
+        "kind": "percent",
+        "bbox": [
+          19.899799346923828,
+          445.08697509765625,
+          66.68329620361328,
+          493.143798828125
+        ],
+        "headline": "-25%",
+        "sub": "DE REMISE IMMÉDIATE"
+      },
+      "price": {
+        "int": "16",
+        "cents": "49",
+        "value": 16.49,
+        "caption": [
+          "Le kg : 6,60 €"
+        ]
+      },
+      "oldPrice": {
+        "int": "21",
+        "cents": "99",
+        "value": 21.99,
+        "caption": [
+          "Le kg : 8,80 €"
+        ]
+      },
+      "image": null,
+      "region": [
+        0.0412,
+        0.5509,
+        0.3753,
+        0.7128
+      ],
+      "pageImage": "catalog/pages/p021.jpg",
+      "pageAspect": 0.5964915329224201
+    },
+    {
+      "id": "p018_00",
+      "page": 18,
+      "name": "Bière",
+      "brand": "HEINEKEN",
+      "description": "",
+      "loyalty": "Soit les 2 produits : 18,58 € Soit le L : 2,35 €",
+      "badge": {
+        "text": "-50% SUR LE 2ÈME",
+        "kind": "percent",
+        "bbox": [
+          20.97640037536621,
+          178.74932861328125,
+          76.98844146728516,
+          225.2669677734375
+        ],
+        "headline": "-50%",
+        "sub": "SUR LE 2ÈME"
+      },
+      "price": {
+        "int": "6",
+        "cents": "19",
+        "value": 6.19,
+        "caption": []
+      },
+      "oldPrice": null,
+      "image": {
+        "src": "catalog/products/p018_00.png",
+        "width": 788,
+        "height": 789
+      },
+      "region": [
+        0.0353,
+        0.2213,
+        0.5935,
+        0.4657
+      ],
+      "pageImage": "catalog/pages/p018.jpg",
+      "pageAspect": 0.5964915329224201
+    },
+    {
+      "id": "p005_00",
+      "page": 5,
+      "name": "Grande maison des bébés",
+      "brand": "",
+      "description": "chambre. 19 accessoires inclus. Facilement pliable et Dès 3 ans.",
+      "loyalty": "Soit 40 € sur la Carte Club Carrefour.",
+      "badge": {
+        "text": "50% D’ÉCONOMIES",
+        "kind": "percent",
+        "bbox": [
+          19.842500686645508,
+          267.6873474121094,
+          70.04217529296875,
+          304.61236572265625
+        ],
+        "headline": "50%",
+        "sub": "D’ÉCONOMIES"
+      },
+      "price": {
+        "int": "79",
+        "cents": "99",
+        "value": 79.99,
+        "caption": [
+          "La grande maison",
+          "Prix payé en caisse",
+          "Soit"
+        ]
+      },
+      "oldPrice": null,
+      "image": {
+        "src": "catalog/products/p005_00.png",
+        "width": 473,
+        "height": 298
+      },
+      "region": [
+        0.0239,
+        0.1289,
+        0.4908,
+        0.4918
+      ],
+      "pageImage": "catalog/pages/p005.jpg",
+      "pageAspect": 0.5964915329224201
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+# Retailer material: catalogues, page renders, product photos, logos (their copyright / trademarks).
+# Regenerate them with the extractor from your own PDF or flyer URL.
+*.pdf
+video/public/
+analysis/
+output/
+
+# Dependencies and build output
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+video/out/
+.DS_Store

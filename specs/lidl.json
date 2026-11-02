@@ -1,0 +1,189 @@
+{
+  "validity": [
+    "DU JEUDI 29/10 AU 04/11"
+  ],
+  "source": "https://www.lidl.fr/l/catalogue-de-la-semaine/du-29-10-au-04-11-les-promos-de-la-semaine/view/flyer/page/1",
+  "pageImages": {
+    "1": "https://imgproxy.leaflets.schwarz/_q5jxqZu-NN0MTJNtpXcXSTBluaG00LNxI1DIZhAiUM/rs:fit:2400:2400:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMTYyNjktYjEzYS03YWU3LThlZWEtNGI3NDY4YTcxMjIwL3BhZ2UtMDFfY2U3MTQxZWMzOWI3ZGI5MmM5MzAzZmQyNzc5M2FiMTQucG5n.jpg",
+    "2": "https://imgproxy.leaflets.schwarz/QxwAhyYNGBdIDvNjtgUfX8oOnXLmV9yUfVs86E6cmwI/rs:fit:2400:2400:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMTYyNjktYjEzYS03YWU3LThlZWEtNGI3NDY4YTcxMjIwL3BhZ2UtMDJfOTU4YTg3NzZlMDcwNjAyNWQ2ZWM0ODY0YzFmNjg4NTgucG5n.jpg",
+    "4": "https://imgproxy.leaflets.schwarz/KCj8GHPfMQOxpJm9bVAi5eK-fp6HaaHupDm5-EbpXU8/rs:fit:2400:2400:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMTYyNjktYjEzYS03YWU3LThlZWEtNGI3NDY4YTcxMjIwL3BhZ2UtMDRfYzc4YTk4Y2VkNmNlM2NjZTE5ODViODIwNjVkODRiNGIucG5n.jpg",
+    "6": "https://imgproxy.leaflets.schwarz/kvPfb4J18Is3qa-_qIoqgrUFNN9bASNIYcms_Dzt9Yg/rs:fit:2400:2400:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMTYyNjktYjEzYS03YWU3LThlZWEtNGI3NDY4YTcxMjIwL3BhZ2UtMDZfZjc5YzZiMjM3MmZjNzJiMWU2OWY0NTcwMzJjY2FkNGIucG5n.jpg",
+    "8": "https://imgproxy.leaflets.schwarz/WJ3-oaLl55K8AThTEtWwJlvk9ctoi-Yfu-nQyu8KJSg/rs:fit:2400:2400:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMTYyNjktYjEzYS03YWU3LThlZWEtNGI3NDY4YTcxMjIwL3BhZ2UtMDhfN2M2NTQ5ZDk2ZjlkNGI3MTk1ZjQ2OGY1MzA1MDNkYjUucG5n.jpg"
+  },
+  "offers": [
+    {
+      "id": "ananas",
+      "page": 4,
+      "name": "Opportunité de dernière minute",
+      "brand": "ANANAS",
+      "price": "1,49",
+      "caption": [
+        "La pièce · Catégorie 1 · Costa Rica"
+      ],
+      "productBox": [
+        0.12,
+        0.31,
+        0.88,
+        0.9
+      ],
+      "region": [
+        0.02,
+        0.34,
+        0.88,
+        0.94
+      ]
+    },
+    {
+      "id": "mangue",
+      "page": 2,
+      "name": "Fruit frais",
+      "brand": "MANGUE",
+      "price": "0,98",
+      "oldPrice": "1,49",
+      "caption": [
+        "La pièce · Catégorie 1"
+      ],
+      "badge": {
+        "kind": "percent",
+        "headline": "-34%",
+        "sub": "AVEC LIDL PLUS",
+        "text": ""
+      },
+      "productBox": [
+        0.13,
+        0.25,
+        0.45,
+        0.432
+      ],
+      "region": [
+        0.0,
+        0.25,
+        0.47,
+        0.57
+      ]
+    },
+    {
+      "id": "robot",
+      "page": 6,
+      "name": "Robot multifonction 600 W",
+      "brand": "SILVERCREST",
+      "price": "44,99",
+      "oldPrice": "59,99",
+      "caption": [
+        "Uniquement en ligne sur lidl.fr"
+      ],
+      "badge": {
+        "kind": "percent",
+        "headline": "-25%",
+        "sub": "UNIQUEMENT EN LIGNE",
+        "text": ""
+      },
+      "imageUrl": "https://www.lidl.fr/assets/gcpf0536541c6c14f7e832b58bab59d5028.jpg",
+      "productBox": [
+        0.25,
+        0.12,
+        0.8,
+        0.5
+      ],
+      "region": [
+        0.03,
+        0.06,
+        0.97,
+        0.55
+      ],
+      "cutout": "vision"
+    },
+    {
+      "id": "airfryer",
+      "page": 6,
+      "name": "Friteuse à air chaud 2 zones",
+      "brand": "SILVERCREST",
+      "price": "79,00",
+      "oldPrice": "99,00",
+      "caption": [
+        "Uniquement en ligne sur lidl.fr"
+      ],
+      "badge": {
+        "kind": "percent",
+        "headline": "-20%",
+        "sub": "UNIQUEMENT EN LIGNE",
+        "text": ""
+      },
+      "imageUrl": "https://www.lidl.fr/assets/gcpe7d308cb5fad4a8dae20449cfd9c5c11.png",
+      "productBox": [
+        0.3,
+        0.57,
+        0.85,
+        0.93
+      ],
+      "region": [
+        0.03,
+        0.57,
+        0.97,
+        0.93
+      ],
+      "cutout": "white",
+      "whiteTol": 242
+    },
+    {
+      "id": "perceuse",
+      "page": 8,
+      "name": "Perceuse-visseuse à percussion 20 V",
+      "brand": "PARKSIDE PERFORMANCE",
+      "price": "109,00",
+      "oldPrice": "129,00",
+      "caption": [
+        "Batterie et chargeur inclus"
+      ],
+      "badge": {
+        "kind": "amount",
+        "headline": "-20€",
+        "sub": "AVEC LIDL PLUS",
+        "text": ""
+      },
+      "imageUrl": "https://www.lidl.fr/assets/gcpd42880b7f4f24dea86f34992d04b791b.jpg",
+      "productBox": [
+        0.05,
+        0.15,
+        0.5,
+        0.45
+      ],
+      "region": [
+        0.03,
+        0.06,
+        0.5,
+        0.55
+      ],
+      "cutout": "vision"
+    },
+    {
+      "id": "raisin",
+      "page": 2,
+      "name": "La barquette de 500 g",
+      "brand": "RAISIN MIX",
+      "price": "1,64",
+      "oldPrice": "2,49",
+      "caption": [
+        "Catégorie 1 · Espagne"
+      ],
+      "badge": {
+        "kind": "percent",
+        "headline": "-34%",
+        "sub": "AVEC LIDL PLUS",
+        "text": ""
+      },
+      "productBox": [
+        0.0,
+        0.6,
+        0.5,
+        0.862
+      ],
+      "region": [
+        0.0,
+        0.57,
+        0.5,
+        0.93
+      ]
+    }
+  ]
+}

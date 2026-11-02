@@ -1,0 +1,26 @@
+{
+  "p007_00": {
+    "name": "Chips nature maxi format", "brand": "LAY'S",
+    "price": {"int": "2", "cents": "75", "value": 2.75, "caption": ["Le 2ème produit : 1€10"]}
+  },
+  "p034_02": {
+    "name": "Tablettes de chocolat au lait", "brand": "MILKA",
+    "price": {"int": "6", "cents": "29", "value": 6.29, "caption": ["Le lot de 6 x 100 g · cagnotte déduite"]},
+    "badge": {"kind": "percent", "headline": "25%", "sub": "SUR VOTRE COMPTE WAAOH!", "text": ""}
+  },
+  "p054_00": {
+    "name": "Doudoune femme ou homme", "brand": "INEXTENSO",
+    "price": {"int": "34", "cents": "99", "value": 34.99, "caption": ["Du S au XXL"]},
+    "cutout": "vision"
+  },
+  "p062_04": {
+    "name": "TV LED 85\" / 214 cm", "brand": "SAMSUNG",
+    "oldPrice": {"int": "999", "cents": "", "value": 999.0, "caption": []},
+    "price": {"int": "849", "cents": "", "value": 849.0, "caption": ["Dont 17€ d'éco-participation"]}
+  },
+  "p005_00": {
+    "name": "Aspirateur balai laveur", "brand": "ROWENTA",
+    "oldPrice": {"int": "199", "cents": "99", "value": 199.99, "caption": []},
+    "price": {"int": "149", "cents": "99", "value": 149.99, "caption": ["Réservoir d'eau 730 ml"]}
+  }
+}

@@ -1,0 +1,7 @@
+PyMuPDF==1.26.5
+pillow==11.3.0
+numpy==2.0.2
+# macOS only: Apple Vision (OCR + subject cut-outs)
+pyobjc-core==11.1
+pyobjc-framework-Quartz==11.1
+pyobjc-framework-Vision==11.1

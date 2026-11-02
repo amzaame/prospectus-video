@@ -1,0 +1,221 @@
+{
+  "cover": "lidl/pages/p001.jpg",
+  "coverAspect": 0.5895833333333333,
+  "dates": [
+    "DU JEUDI 29/10",
+    "AU MERCREDI 04/11"
+  ],
+  "theme": {
+    "bg": "#0050aa",
+    "accent": "#fff000",
+    "stickerText": "#0050aa",
+    "style": "lidl"
+  },
+  "logo": "lidl/logo.png",
+  "tagline": [
+    "LIDL,",
+    "ÇA VAUT LE COUP."
+  ],
+  "cta": [
+    "COMMANDEZ SUR",
+    "LIDL.FR"
+  ],
+  "legal": "Pour votre santé, évitez de manger trop gras, trop sucré, trop salé. www.mangerbouger.fr",
+  "offers": [
+    {
+      "id": "ananas",
+      "page": 4,
+      "name": "Opportunité de dernière minute",
+      "brand": "ANANAS",
+      "description": "",
+      "loyalty": "",
+      "badge": null,
+      "price": {
+        "int": "1",
+        "cents": "49",
+        "value": 1.49,
+        "caption": [
+          "La pièce · Catégorie 1 · Costa Rica"
+        ]
+      },
+      "oldPrice": null,
+      "image": {
+        "src": "lidl/products/ananas.png",
+        "width": 1031,
+        "height": 1416
+      },
+      "region": [
+        0.02,
+        0.34,
+        0.88,
+        0.94
+      ],
+      "pageImage": "lidl/pages/p004.jpg",
+      "pageAspect": 0.5895833333333333
+    },
+    {
+      "id": "raisin",
+      "page": 2,
+      "name": "La barquette de 500 g",
+      "brand": "RAISIN MIX",
+      "description": "",
+      "loyalty": "",
+      "badge": {
+        "kind": "percent",
+        "headline": "-34%",
+        "sub": "AVEC LIDL PLUS",
+        "text": ""
+      },
+      "price": {
+        "int": "1",
+        "cents": "64",
+        "value": 1.64,
+        "caption": [
+          "Catégorie 1 · Espagne"
+        ]
+      },
+      "oldPrice": {
+        "int": "2",
+        "cents": "49",
+        "value": 2.49,
+        "caption": []
+      },
+      "image": {
+        "src": "lidl/products/raisin.png",
+        "width": 667,
+        "height": 617
+      },
+      "region": [
+        0.0,
+        0.57,
+        0.5,
+        0.93
+      ],
+      "pageImage": "lidl/pages/p002.jpg",
+      "pageAspect": 0.5895833333333333
+    },
+    {
+      "id": "robot",
+      "page": 6,
+      "name": "Robot multifonction 600 W",
+      "brand": "SILVERCREST",
+      "description": "",
+      "loyalty": "",
+      "badge": {
+        "kind": "percent",
+        "headline": "-25%",
+        "sub": "UNIQUEMENT EN LIGNE",
+        "text": ""
+      },
+      "price": {
+        "int": "44",
+        "cents": "99",
+        "value": 44.99,
+        "caption": [
+          "Uniquement en ligne sur lidl.fr"
+        ]
+      },
+      "oldPrice": {
+        "int": "59",
+        "cents": "99",
+        "value": 59.99,
+        "caption": []
+      },
+      "image": {
+        "src": "lidl/products/robot.png",
+        "width": 468,
+        "height": 497
+      },
+      "region": [
+        0.03,
+        0.06,
+        0.97,
+        0.55
+      ],
+      "pageImage": "lidl/pages/p006.jpg",
+      "pageAspect": 0.5895833333333333
+    },
+    {
+      "id": "airfryer",
+      "page": 6,
+      "name": "Friteuse à air chaud 2 zones",
+      "brand": "SILVERCREST",
+      "description": "",
+      "loyalty": "",
+      "badge": {
+        "kind": "percent",
+        "headline": "-20%",
+        "sub": "UNIQUEMENT EN LIGNE",
+        "text": ""
+      },
+      "price": {
+        "int": "79",
+        "cents": "00",
+        "value": 79.0,
+        "caption": [
+          "Uniquement en ligne sur lidl.fr"
+        ]
+      },
+      "oldPrice": {
+        "int": "99",
+        "cents": "00",
+        "value": 99.0,
+        "caption": []
+      },
+      "image": {
+        "src": "lidl/products/airfryer.png",
+        "width": 385,
+        "height": 519
+      },
+      "region": [
+        0.03,
+        0.57,
+        0.97,
+        0.93
+      ],
+      "pageImage": "lidl/pages/p006.jpg",
+      "pageAspect": 0.5895833333333333
+    },
+    {
+      "id": "perceuse",
+      "page": 8,
+      "name": "Perceuse-visseuse à percussion 20 V",
+      "brand": "PARKSIDE PERFORMANCE",
+      "description": "",
+      "loyalty": "",
+      "badge": {
+        "kind": "amount",
+        "headline": "-20€",
+        "sub": "AVEC LIDL PLUS",
+        "text": ""
+      },
+      "price": {
+        "int": "109",
+        "cents": "00",
+        "value": 109.0,
+        "caption": [
+          "Batterie et chargeur inclus"
+        ]
+      },
+      "oldPrice": {
+        "int": "129",
+        "cents": "00",
+        "value": 129.0,
+        "caption": []
+      },
+      "image": {
+        "src": "lidl/products/perceuse.png",
+        "width": 524,
+        "height": 545
+      },
+      "region": [
+        0.03,
+        0.06,
+        0.5,
+        0.55
+      ],
+      "pageImage": "lidl/pages/p008.jpg",
+      "pageAspect": 0.5895833333333333
+    }
+  ]
+}
