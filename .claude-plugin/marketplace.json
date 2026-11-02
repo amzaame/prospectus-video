@@ -2,7 +2,8 @@
   "name": "prospectus-video",
   "description": "Turn supermarket catalogues into animated promo videos with Claude Code.",
   "owner": {
-    "name": "Amecharhamza"
+    "name": "amzaame",
+    "url": "https://github.com/amzaame"
   },
   "plugins": [
     {

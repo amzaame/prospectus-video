@@ -10,12 +10,12 @@ Formats 16:9 (1920×1080) et 9:16 (1080×1920), 30 fps, ~15 s pour 4 offres.
 Dans Claude Code, sur macOS, avec `brew install ffmpeg node` déjà fait :
 
 ```
-/plugin install prospectus-video --marketplace <owner>/prospectus-video
+/plugin install prospectus-video --marketplace amzaame/prospectus-video
 ```
 
 Répondez `y` pour ajouter la marketplace, puis choisissez la portée. Dans l'app desktop, où `/plugin` ne
 fonctionne pas : bouton + à côté du champ de saisie → Plugins → Add marketplace avec
-`<owner>/prospectus-video` → Add plugin.
+`amzaame/prospectus-video` → Add plugin.
 
 Ensuite, joignez votre catalogue (PDF) ou collez l'URL d'un catalogue en ligne et demandez une vidéo,
 par exemple « fais une vidéo promo avec ce catalogue ». Le skill `catalog-video` crée un dossier de travail
