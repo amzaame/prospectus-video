@@ -12,7 +12,10 @@ import math
 import re
 from pathlib import Path
 
-import fitz  # PyMuPDF
+try:  # PyMuPDF >= 1.24 is imported as pymupdf; older ones only as fitz
+    import pymupdf as fitz
+except ImportError:
+    import fitz
 from PIL import Image, ImageDraw
 
 PAGE_DPI = 200          # page renders used as backgrounds in the video

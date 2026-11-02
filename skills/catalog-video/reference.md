@@ -3,7 +3,8 @@
 ## Spec (routes B and C)
 
 `specs/<name>.json`, read by `extractor/offers_from_spec.py`. Worked examples ship in `specs/examples/`
-(`leclerc.json`: flattened PDF with retailer packshots; `lidl.json`: online flyer).
+(`leclerc.json`: flattened PDF with retailer packshots; `lidl.json`: online flyer; `systemeu.json`: loyalty
+selection with no prices, packshots from coursesu.com).
 
 ```json
 {
@@ -15,13 +16,13 @@
       "id": "robot", "page": 6,
       "name": "Robot multifonction 600 W",         // descriptive line (condensed font)
       "brand": "SILVERCREST",                      // heavy line under it
-      "price": "44,99", "oldPrice": "59,99",       // old price is struck through
+      "price": "44,99", "oldPrice": "59,99",       // old price is struck through; both optional
       "caption": ["Uniquement en ligne sur lidl.fr"],
       "badge": {"kind": "percent", "headline": "-25%", "sub": "UNIQUEMENT EN LIGNE", "text": ""},
       "productBox": [0.25, 0.12, 0.80, 0.50],      // product on the page, fractions x0,y0,x1,y1
       "region": [0.03, 0.06, 0.97, 0.55],          // whole offer on the page (yellow frame in the video)
       "imageUrl": "https://…",                     // optional HD packshot, replaces the page crop
-      "cutout": "vision", "whiteTol": 185          // for imageUrl: "white" (default) or "vision"
+      "cutout": "vision", "whiteTol": 185          // for imageUrl: "white" (default), "vision" or "none"
     }
   ]
 }
@@ -37,6 +38,8 @@ Loyalty "ticket" offers (paid price, then price after the loyalty credit; not st
 Page 1 is always fetched (cover for the intro). `productBox` should avoid price tags and badges that overlap
 the product: Vision keeps whatever looks like the subject. `whiteTol` (0–255) is the darkest-channel level
 counted as background: 185 removes faded reflections under boxes; 240 keeps light grey and silver parts.
+`"none"` keeps the packshot as it is: for a pack photographed flat from the front whose white edges touch the
+border, where white removal eats the pack and Vision keeps only the picture printed on it.
 
 ## Overrides (route A)
 
@@ -79,13 +82,14 @@ badges are found without a profile.
 2. **Fonts.** Note the brand fonts (`document.fonts` on the site, `probe.py` on the PDF), then choose the
    closest Google fonts available in `@remotion/google-fonts` and add a pair to `FONTS` in
    `video/src/fonts.ts`: `heavy` (prices, badges, brand names, outro), `cond` (names, captions), optional
-   `price`. List the brand font first in the CSS stack so it is used where the person has it installed.
+   `price`, optional `script` (a handwritten font: the outro slogan is then written in it). List the brand font first in the CSS stack so it is used where the person has it installed.
 3. **Preset.** Add an entry to `STYLES` in `video/src/brand.ts` and its name to `style` in `video/src/types.ts`:
 
 | field | values |
 |---|---|
 | `pattern` | `burst` (turning starbursts), `sparkle` (twinkling stars), `pixels` (drifting squares), `none` |
-| `sticker` | `burst` (star with the badge or price), `ticket` (round loyalty sticker with curved texts), `tag` (box + caption band) |
+| `sticker` | `burst` (star with the badge or price), `ticket` (round loyalty sticker with curved texts), `tag` (box + caption band), `round` (plain disc, figure + caption) |
+| `stickerAt` | `top` (default, product's top-left) or `bottom` (lower-left: keeps the pack's logo visible) |
 | `priceStyle` | `stack` (44€ over 99), `comma` (59€,90), `inline` (44.99) |
 | `priceColor`, `strike` (`diagonal`/`straight`), `strikeColor` | price look |
 | `badgeBox` `{bg, fg}` | promo headline drawn in a box in the text column |

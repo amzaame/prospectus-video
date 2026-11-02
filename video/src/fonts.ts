@@ -7,6 +7,8 @@ import {loadFont as loadFiraCond} from '@remotion/google-fonts/FiraSansCondensed
 import {loadFont as loadFiraXCond} from '@remotion/google-fonts/FiraSansExtraCondensed';
 import {loadFont as loadLexend} from '@remotion/google-fonts/Lexend';
 import {loadFont as loadFigtree} from '@remotion/google-fonts/Figtree';
+import {loadFont as loadMulish} from '@remotion/google-fonts/Mulish';
+import {loadFont as loadSatisfy} from '@remotion/google-fonts/Satisfy';
 
 const latin = {subsets: ['latin', 'latin-ext'] as ('latin' | 'latin-ext')[]};
 const montserrat = loadMontserrat('normal', {weights: ['600', '700', '800', '900'], ...latin});
@@ -18,10 +20,12 @@ const firaCond = loadFiraCond('normal', {weights: ['400', '500', '600'], ...lati
 const firaXCond = loadFiraXCond('normal', {weights: ['700', '800', '900'], ...latin});
 const lexend = loadLexend('normal', {weights: ['600', '700', '800', '900'], ...latin});
 const figtree = loadFigtree('normal', {weights: ['500', '600', '700'], ...latin});
+const mulish = loadMulish('normal', {weights: ['600', '700', '800', '900'], ...latin});
+const satisfy = loadSatisfy('normal', {weights: ['400'], subsets: ['latin']});
 
 // Font pairs per brand. Commercial brand fonts are listed first and used when installed locally;
 // the Google fonts are the closest free substitutes.
-export const FONTS: Record<string, {heavy: string; cond: string; price?: string}> = {
+export const FONTS: Record<string, {heavy: string; cond: string; price?: string; script?: string}> = {
   // Carrefour catalogue: Proxima Nova Black/Bold + Proxima Nova Condensed
   proxima: {
     heavy: `"Proxima Nova", ${montserrat.fontFamily}, sans-serif`,
@@ -42,5 +46,11 @@ export const FONTS: Record<string, {heavy: string; cond: string; price?: string}
   auchan: {
     heavy: `"Sana Sans Alt Exp", ${lexend.fontFamily}, sans-serif`,
     cond: `"Sana Sans Alt", ${figtree.fontFamily}, sans-serif`,
+  },
+  // Système U: coursesu.com loads Mulish (text) and Satisfy (the handwritten "J'ai tellement plus à y gagner")
+  systemeu: {
+    heavy: `${mulish.fontFamily}, sans-serif`,
+    cond: `${mulish.fontFamily}, sans-serif`,
+    script: `${satisfy.fontFamily}, cursive`,
   },
 };

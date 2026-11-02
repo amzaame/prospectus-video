@@ -21,7 +21,7 @@ export type Spot = {
   cover: string;
   coverAspect: number;
   dates: string[];
-  theme: {bg: string; accent: string; stickerText?: string; style?: 'carrefour' | 'leclerc' | 'lidl' | 'auchan'};
+  theme: {bg: string; accent: string; stickerText?: string; style?: 'carrefour' | 'leclerc' | 'lidl' | 'auchan' | 'systemeu'};
   logo: string | null;
   tagline: string[];
   cta: string[];

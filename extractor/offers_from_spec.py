@@ -14,7 +14,10 @@ from pathlib import Path
 
 import subprocess
 
-import fitz
+try:  # PyMuPDF >= 1.24 is imported as pymupdf; older ones only as fitz
+    import pymupdf as fitz
+except ImportError:
+    import fitz
 
 from extract_raster import lift
 
@@ -98,8 +101,15 @@ def main():
         if o.get("imageUrl"):  # HD packshot (e.g. the retailer's product page) beats a crop of the page
             src = out / "products" / f"{oid}.download"
             download(o["imageUrl"], src)
-            # "white": clear the white backdrop (keeps whole boxes); "vision": subject lifting (keeps glass/silver)
-            if o.get("cutout", "white") == "vision":
+            # "white": clear the white backdrop (keeps whole boxes); "vision": subject lifting (keeps glass/silver);
+            # "none": keep the picture as it is (flat pack shot whose white edges touch the border)
+            if o.get("cutout") == "none":
+                from PIL import Image
+                im = Image.open(src).convert("RGBA")
+                im = im.crop(im.getchannel("A").getbbox() or (0, 0, *im.size))
+                im.save(out / "products" / f"{oid}.png")
+                r = (im.size, None)
+            elif o.get("cutout", "white") == "vision":
                 r = lift(src, [0, 0, 1, 1], [], out / "products" / f"{oid}.png")
             else:
                 r = (remove_white_bg(src, out / "products" / f"{oid}.png", o.get("whiteTol", 185)), None)
@@ -118,7 +128,9 @@ def main():
         offers.append(dict(
             id=oid, page=o["page"], name=o.get("name", ""), brand=o.get("brand", ""),
             description=o.get("description", ""), loyalty="", badge=badge,
-            price=price(ticket["net"] if ticket else o["price"], ticket and ticket.get("netLabel"), o.get("caption")),
+            # loyalty selections (e.g. "20% en € Carte U") can have no price at all
+            price=(price(ticket["net"] if ticket else o["price"], ticket and ticket.get("netLabel"), o.get("caption"))
+                   if ticket or o.get("price") else None),
             oldPrice=price(ticket["paid"], ticket.get("paidLabel")) if ticket else
             (price(o["oldPrice"]) if o.get("oldPrice") else None),
             image=image, region=o.get("region") or o["productBox"],

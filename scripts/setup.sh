@@ -5,6 +5,7 @@
 #   bash scripts/setup.sh [workspace]      # default: ./prospectus-video
 #
 # Re-running it updates the code and keeps the user's catalogues, specs, spot configs and renders.
+# Files the user edited after the last setup (a brand style in brand.ts...) are kept: rsync --update.
 set -euo pipefail
 
 TOOL="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -19,8 +20,8 @@ command -v ffmpeg >/dev/null || fail "ffmpeg not found: brew install ffmpeg"
 [ -d "/Applications/Google Chrome.app" ] || echo "setup: Google Chrome not found; Remotion will try to download its own browser."
 
 mkdir -p "$WS"
-rsync -a --exclude node_modules --exclude public --exclude 'src/spots/*.json' "$TOOL/video/" "$WS/video/"
-rsync -a --exclude __pycache__ --exclude '_price_crop.png' "$TOOL/extractor/" "$WS/extractor/"
+rsync -a --update --exclude node_modules --exclude public --exclude 'src/spots/*.json' "$TOOL/video/" "$WS/video/"
+rsync -a --update --exclude __pycache__ --exclude '_price_crop.png' "$TOOL/extractor/" "$WS/extractor/"
 mkdir -p "$WS/specs/examples" "$WS/video/src/spots" "$WS/video/public" "$WS/output"
 cp "$TOOL"/specs/*.json "$WS/specs/examples/"
 cp "$TOOL/requirements.txt" "$WS/"

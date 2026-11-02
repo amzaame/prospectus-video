@@ -1,0 +1,137 @@
+{
+  "validity": [
+    "DU LUNDI 2 NOVEMBRE AU DIMANCHE 6 DÉCEMBRE 2026"
+  ],
+  "source": "Ma sélection Carte U Novembre.pdf",
+  "offers": [
+    {
+      "id": "feta",
+      "page": 7,
+      "name": "Feta grecque AOP brebis et chèvre",
+      "brand": "ISLOS",
+      "badge": {
+        "kind": "percent",
+        "headline": "60%",
+        "sub": "SUR LE 2ÈME PRODUIT",
+        "text": ""
+      },
+      "productBox": [
+        0.04,
+        0.32,
+        0.22,
+        0.475
+      ],
+      "region": [
+        0.03,
+        0.29,
+        0.46,
+        0.49
+      ],
+      "imageUrl": "https://static.coursesu.com/dw/image/v2/BBQX_PRD/on/demandware.static/-/Sites-digitalu-master-catalog/default/dw79fa5148/3272770015523_H1N1_2418574_S10.png?sw=1200&sh=1200&sm=fit",
+      "cutout": "none"
+    },
+    {
+      "id": "perrier",
+      "page": 35,
+      "name": "Eau minérale naturelle gazeuse 6 x 50 cl",
+      "brand": "PERRIER",
+      "badge": {
+        "kind": "percent",
+        "headline": "50%",
+        "sub": "SUR LE 2ÈME PRODUIT",
+        "text": ""
+      },
+      "productBox": [
+        0.5,
+        0.34,
+        0.67,
+        0.46
+      ],
+      "region": [
+        0.49,
+        0.29,
+        0.92,
+        0.49
+      ],
+      "imageUrl": "https://static.coursesu.com/dw/image/v2/BBQX_PRD/on/demandware.static/-/Sites-digitalu-master-catalog/default/dw3547d55f/3179730005306_H1N1_1260025_S10.png?sw=1200&sh=1200&sm=fit"
+    },
+    {
+      "id": "fairy",
+      "page": 11,
+      "name": "Détergent vaisselle Miracle citron, 31 capsules",
+      "brand": "FAIRY",
+      "badge": {
+        "kind": "percent",
+        "headline": "40%",
+        "sub": "EN € CARTE U",
+        "text": ""
+      },
+      "productBox": [
+        0.04,
+        0.55,
+        0.22,
+        0.69
+      ],
+      "region": [
+        0.03,
+        0.515,
+        0.46,
+        0.715
+      ],
+      "imageUrl": "https://static.coursesu.com/dw/image/v2/BBQX_PRD/on/demandware.static/-/Sites-digitalu-master-catalog/default/dwd7dd01fd/8006530079105_H1N1_5398057_S10.png?sw=1200&sh=1200&sm=fit",
+      "cutout": "vision"
+    },
+    {
+      "id": "tefal",
+      "page": 39,
+      "name": "Poêle Dailycook inox céramique 24 cm",
+      "brand": "TEFAL",
+      "badge": {
+        "kind": "percent",
+        "headline": "30%",
+        "sub": "EN € CARTE U",
+        "text": ""
+      },
+      "productBox": [
+        0.04,
+        0.14,
+        0.22,
+        0.21
+      ],
+      "region": [
+        0.03,
+        0.065,
+        0.46,
+        0.27
+      ],
+      "imageUrl": "https://static.coursesu.com/dw/image/v2/BBQX_PRD/on/demandware.static/-/Sites-digitalu-master-catalog/default/dwa2aacc97/3168430372443_A1N0_3539556_S16.png?sw=1200&sh=1200&sm=fit",
+      "whiteTol": 240
+    },
+    {
+      "id": "tropicana",
+      "page": 35,
+      "name": "Pur jus orange Fibres+ 75 cl",
+      "brand": "TROPICANA",
+      "badge": {
+        "kind": "percent",
+        "headline": "30%",
+        "sub": "EN € CARTE U",
+        "text": ""
+      },
+      "productBox": [
+        0.08,
+        0.09,
+        0.18,
+        0.26
+      ],
+      "region": [
+        0.03,
+        0.065,
+        0.46,
+        0.27
+      ],
+      "imageUrl": "https://static.coursesu.com/dw/image/v2/BBQX_PRD/on/demandware.static/-/Sites-digitalu-master-catalog/default/dw805f2e7a/1210002002806_A1N1_6388521_S13.png?sw=1200&sh=1200&sm=fit",
+      "whiteTol": 240
+    }
+  ]
+}

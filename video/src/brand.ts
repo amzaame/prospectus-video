@@ -2,11 +2,11 @@ import {createContext, useContext} from 'react';
 import {FONTS} from './fonts';
 
 export type BrandStyle = {
-  fonts: {heavy: string; cond: string; price?: string};
+  fonts: {heavy: string; cond: string; price?: string; script?: string};
   /** background decoration */
   pattern: 'burst' | 'sparkle' | 'pixels' | 'none';
   /** promo sticker next to the product */
-  sticker: 'burst' | 'ticket' | 'tag';
+  sticker: 'burst' | 'ticket' | 'tag' | 'round';
   /** stack: 59€ over 90 (Carrefour) · comma: 59€,90 (Leclerc) · inline: 44.99 (Lidl) */
   priceStyle: 'stack' | 'comma' | 'inline';
   priceColor?: string;
@@ -22,6 +22,8 @@ export type BrandStyle = {
   datePill: {bg: string; fg: string};
   /** second background colour for the gradient */
   bg2?: string;
+  /** sticker on the product's top-left (default) or lower-left corner */
+  stickerAt?: 'top' | 'bottom';
   /** outro logo height relative to its white tile (square logos need more) */
   logoScale?: number;
   stickerTitle?: string;
@@ -78,6 +80,20 @@ export const STYLES: Record<string, BrandStyle> = {
     tilt: 0,
     datePill: {bg: '#ffffff', fg: '#e0001a'},
     bg2: '#a80014',
+  },
+  // coursesu.com: Carte U teal rgb(0,125,143); catalogue cover: yellow "20%", red pill with yellow text
+  systemeu: {
+    fonts: FONTS.systemeu,
+    pattern: 'none',
+    sticker: 'round',
+    stickerAt: 'bottom',
+    priceStyle: 'comma',
+    priceColor: '#f8d65c',
+    badgeBox: {bg: '#c8202f', fg: '#f8d65c'},
+    tilt: 0,
+    datePill: {bg: '#ffffff', fg: '#c8202f'},
+    bg2: '#0b5560',
+    logoScale: 0.82,
   },
 };
 

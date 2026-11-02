@@ -47,15 +47,18 @@ offer with id `pNNN_KK`), native cut-outs, page renders, and `output/debug_<name
 detected offer framed in pink. Expect a few mistakes: a price taken from the neighbouring offer, a missed
 old price, a logo instead of the product.
 
-**B. Flattened PDF** (no text layer): render grids, read the pages yourself, and write `specs/<name>.json`:
+**B. Flattened PDF** (no text layer): look through all pages, pick offers, read their exact text, and write
+`specs/<name>.json`:
 
 ```bash
+.venv/bin/python extractor/pages.py "<pdf>" --out output/pages_<name>     # pNNN.jpg + contact sheets
 .venv/bin/python extractor/offers_from_spec.py specs/<name>.json "<pdf>" --out video/public/<name>
-.venv/bin/python extractor/grid.py video/public/<name>/pages/p011.jpg --out output/grids
+.venv/bin/python extractor/grid.py output/pages_<name>/p011.jpg --out output/grids
 ```
 
-Look at the grid images to read `productBox` and `region` as fractions of the page (format in
-reference.md › Spec). First run the spec with only the pages you need so the page images exist, then add the boxes.
+Look at the contact sheets to choose, then at the grid images (made from `output/pages_<name>/pNNN.jpg`) to read
+`productBox` and `region` as fractions of the page (format in reference.md › Spec). Loyalty selections
+with no price at all ("30 % en € Carte U") are fine: leave `price` out and put the percentage in `badge`.
 
 **C. Online flyer**: open it in the browser, decline non-essential cookies, and look at the network requests
 or page data for a JSON feed of pages and products (Lidl: `endpoints.leaflets.schwarz/v4/flyer?flyer_identifier=…`).
@@ -65,7 +68,8 @@ answers "Access Denied" or asks for a login, stop using it — never work around
 **Better product photos (any route).** A retailer's product page often has a bigger packshot than the
 catalogue. Find it with the site's own search (EAN / product id), put it in the offer's `imageUrl`, and pick
 the cut-out method: `"cutout": "white"` (default) for boxes and packs, `"vision"` for appliances, glass,
-metal or anything with light parts on a white background. A spec entry with `imageUrl` works on top of route A
+metal or anything with light parts on a white background, `"none"` for a pack shot flat from the front
+with white edges (look at each result: Vision tends to keep only the picture printed on a pack). A spec entry with `imageUrl` works on top of route A
 too, through the overrides file (reference.md › Overrides).
 
 ## 3. Choose and check the offers
@@ -82,7 +86,7 @@ in the overrides. Do not ship a price you have not seen on the page.
 
 ## 4. Brand style
 
-Presets in `video/src/brand.ts`: `carrefour`, `leclerc`, `lidl`, `auchan`. For another retailer create one
+Presets in `video/src/brand.ts`: `carrefour`, `leclerc`, `lidl`, `auchan`, `systemeu`. For another retailer create one
 (reference.md › New brand style): colours from the retailer's website (computed styles / CSS variables) and
 from the PDF fills, its fonts identified but **replaced by the closest Google font** — brand fonts are
 proprietary, never download or embed them. Background motif, sticker shape, price format (`stack` 44€99,
@@ -113,7 +117,8 @@ Render stills first and look at them — every offer scene (around frames 110 + 
 cd video && npx remotion still src/index.ts <Name>-16x9 ../output/stills/<name>_110.jpg --frame=110
 ```
 
-Check: text overflowing or wrapping badly, sticker over the product name, the yellow frame on the right
+Check: text overflowing or wrapping badly, sticker over the product name or the pack's logo
+(`stickerAt: 'bottom'`), sticker off screen, the yellow frame on the right
 offer, cut-outs complete, outro text clear of the logo, the same in 9:16. Fix, then render both:
 
 ```bash

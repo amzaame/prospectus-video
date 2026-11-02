@@ -32,7 +32,10 @@ def score(o):
 
 
 def crop_logo(pdf, page, rect, out):
-    import fitz
+    try:
+        import pymupdf as fitz
+    except ImportError:
+        import fitz
     doc = fitz.open(pdf)
     clip = fitz.Rect(*rect)
     doc[page - 1].get_pixmap(dpi=500, clip=clip).save(out)

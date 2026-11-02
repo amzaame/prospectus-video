@@ -11,7 +11,10 @@ import json
 import re
 from pathlib import Path
 
-import fitz
+try:  # PyMuPDF >= 1.24 is imported as pymupdf; older ones only as fitz
+    import pymupdf as fitz
+except ImportError:
+    import fitz
 import numpy as np
 import Quartz
 import Vision

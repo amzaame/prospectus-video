@@ -90,6 +90,7 @@ export const OfferScene: React.FC<{offer: Offer; spot: Spot; index: number}> = (
 
   // --- sticker
   const stickIn = useEnter(22, {damping: 10, stiffness: 140});
+  const stickerSize = (L.portrait ? 280 : 240) * u;
   // the ticket sticker only makes sense for a loyalty amount; the burst repeats the price otherwise
   const stickerText =
     offer.badge?.headline || (offer.price && B.sticker === 'burst' ? `${offer.price.int},${offer.price.cents}€` : '');
@@ -225,8 +226,13 @@ export const OfferScene: React.FC<{offer: Offer; spot: Spot; index: number}> = (
         <div
           style={{
             position: 'absolute',
-            left: box.x * u - (L.portrait ? 0 : 40 * u),
-            top: box.y * u + (L.portrait ? -40 : 60) * u,
+            ...(B.stickerAt === 'bottom' && img
+              ? {
+                  // lower-left corner of the product: pack logos are usually at the top
+                  left: Math.max(30 * u, box.x * u + (box.w * u - pw) / 2 - stickerSize * 0.35), // stay on screen
+                  top: box.y * u + (box.h * u + ph) / 2 - stickerSize * 0.85,
+                }
+              : {left: box.x * u - (L.portrait ? 0 : 40 * u), top: box.y * u + (L.portrait ? -40 : 60) * u}),
             transform: `scale(${stickIn * (1 - exit)}) rotate(${(1 - stickIn) * -120}deg)`,
           }}
         >
@@ -235,7 +241,7 @@ export const OfferScene: React.FC<{offer: Offer; spot: Spot; index: number}> = (
             sub={offer.badge?.sub}
             color={accent}
             textColor={spot.theme.stickerText ?? '#d0021b'}
-            size={(L.portrait ? 280 : 240) * u}
+            size={stickerSize}
           />
         </div>
       )}
@@ -345,17 +351,18 @@ export const Outro: React.FC<{spot: Spot}> = ({spot}) => {
   // text block sized on its longest line (both messages share the slot)
   const fs = (L.portrait ? 64 : 58) * u;
   const textW = Math.min(L.width * 0.9, Math.max(...[...spot.tagline, ...spot.cta].map((t) => t.length)) * fs * 0.68);
-  const lines = (txt: string[], p: number, o: number) => (
+  // a brand with a script font (Système U) writes its slogan by hand, as on the catalogue
+  const lines = (txt: string[], p: number, o: number, script = false) => (
     <div style={{position: 'absolute', opacity: o, right: 0, left: L.portrait ? 0 : undefined, textAlign: L.portrait ? 'center' : 'right'}}>
       {txt.map((t, i) => (
-        <div key={i} style={{overflow: 'hidden'}}>
+        <div key={i} style={{overflow: 'hidden', paddingBottom: script ? fs * 0.15 : 0}}>
           <div
             style={{
               transform: `translateY(${(1 - p) * 110}%)`,
-              fontFamily: B.fonts.heavy,
-              fontWeight: 900,
-              fontSize: L.portrait ? Math.min(fs, textW / (Math.max(...txt.map((t) => t.length)) * 0.68)) : fs,
-              lineHeight: 1.05,
+              fontFamily: script ? B.fonts.script : B.fonts.heavy,
+              fontWeight: script ? 400 : 900,
+              fontSize: (L.portrait ? Math.min(fs, textW / (Math.max(...txt.map((t) => t.length)) * 0.68)) : fs) * (script ? 1.25 : 1),
+              lineHeight: script ? 1.1 : 1.05,
               color: 'white',
               whiteSpace: 'nowrap',
             }}
@@ -388,7 +395,7 @@ export const Outro: React.FC<{spot: Spot}> = ({spot}) => {
     <AbsoluteFill style={{opacity: 1 - fade}}>
       <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', flexDirection: L.portrait ? 'column-reverse' : 'row', gap: 40 * u}}>
         <div style={{position: 'relative', width: textW, height: 140 * u, display: 'flex', alignItems: 'center'}}>
-          {lines(spot.tagline, a, 1 - out1)}
+          {lines(spot.tagline, a, 1 - out1, Boolean(B.fonts.script))}
           {lines(spot.cta, b, 1)}
         </div>
         {logoTile}

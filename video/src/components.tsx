@@ -255,6 +255,7 @@ export const Sticker: React.FC<{text: string; sub?: string; color: string; textC
   const B = useBrand();
   if (B.sticker === 'ticket') return <TicketSticker text={text} color={color} textColor={textColor} size={size} />;
   if (B.sticker === 'tag') return <TagSticker text={text} sub={sub} size={size} />;
+  if (B.sticker === 'round') return <RoundSticker text={text} sub={sub} color={color} textColor={textColor} size={size} />;
   return (
     <div style={{position: 'relative', width: size, height: size, transform: `rotate(${Math.sin(frame / 14) * 4 - 8}deg)`}}>
       <svg width={size} height={size} viewBox="-100 -100 200 200" style={{position: 'absolute', overflow: 'visible'}}>
@@ -279,6 +280,33 @@ export const Sticker: React.FC<{text: string; sub?: string; color: string; textC
         <div style={{fontSize: size * (text.length > 4 ? 0.24 : 0.3), letterSpacing: -1}}>{text}</div>
         {sub && <div style={{fontSize: size * 0.085, marginTop: size * 0.02, maxWidth: size * 0.62, fontFamily: B.fonts.cond, fontWeight: 700}}>{sub}</div>}
       </div>
+    </div>
+  );
+};
+
+/** Système U loyalty disc: plain disc, big figure, caption inside under it. */
+const RoundSticker: React.FC<{text: string; sub?: string; color: string; textColor: string; size: number}> = ({
+  text,
+  sub,
+  color,
+  textColor,
+  size,
+}) => {
+  const frame = useCurrentFrame();
+  const B = useBrand();
+  return (
+    <div style={{width: size, height: size, borderRadius: '50%', background: color, color: textColor,
+      display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center',
+      transform: `rotate(${Math.sin(frame / 14) * 3 - 6}deg)`, boxShadow: '0 14px 30px rgba(0,0,0,0.3)'}}>
+      <div style={{fontFamily: B.fonts.heavy, fontWeight: 900, fontSize: size * 0.34, lineHeight: 0.95, letterSpacing: -2}}>
+        {text}
+      </div>
+      {sub && (
+        <div style={{fontFamily: B.fonts.heavy, fontWeight: 800, fontSize: size * 0.085, maxWidth: size * 0.7,
+          marginTop: size * 0.03, lineHeight: 1.1}}>
+          {sub}
+        </div>
+      )}
     </div>
   );
 };
