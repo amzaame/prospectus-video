@@ -12,3 +12,6 @@ __pycache__/
 *.pyc
 video/out/
 .DS_Store
+
+# workspace created by scripts/setup.sh when run inside the repo
+prospectus-video/

@@ -5,7 +5,25 @@ intro avec la couverture → une scène par offre (titre, badge promo, prix barr
 détourage produit + sticker, page du prospectus avec l'offre surlignée) → outro marque.
 Formats 16:9 (1920×1080) et 9:16 (1080×1920), 30 fps, ~15 s pour 4 offres.
 
-## Installation (macOS)
+## Plugin Claude Code (recommandé)
+
+Dans Claude Code, sur macOS, avec `brew install ffmpeg node` déjà fait :
+
+```
+/plugin install prospectus-video --marketplace <owner>/prospectus-video
+```
+
+Répondez `y` pour ajouter la marketplace, puis choisissez la portée. Dans l'app desktop, où `/plugin` ne
+fonctionne pas : bouton + à côté du champ de saisie → Plugins → Add marketplace avec
+`<owner>/prospectus-video` → Add plugin.
+
+Ensuite, joignez votre catalogue (PDF) ou collez l'URL d'un catalogue en ligne et demandez une vidéo,
+par exemple « fais une vidéo promo avec ce catalogue ». Le skill `catalog-video` crée un dossier de travail
+`./prospectus-video` (environnement Python et Node, quelques minutes la première fois), choisit la méthode
+d'extraction, vérifie les offres, applique la charte de l'enseigne et rend les vidéos 16:9 et 9:16 dans
+`./prospectus-video/output/`.
+
+## Installation manuelle (macOS)
 
 Le détourage et l'OCR utilisent le moteur Vision d'Apple : l'outil tourne sur macOS uniquement.
 

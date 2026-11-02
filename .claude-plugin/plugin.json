@@ -1,0 +1,7 @@
+{
+  "name": "prospectus-video",
+  "version": "0.1.0",
+  "description": "Turn a supermarket catalogue (PDF or online flyer) into animated 16:9 and 9:16 promo videos in the retailer's brand style.",
+  "author": { "name": "Amecharhamza" },
+  "keywords": ["catalogue", "prospectus", "video", "remotion", "retail"]
+}

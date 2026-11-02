@@ -3,18 +3,18 @@ import {Composition} from 'remotion';
 import {Spot} from './Spot';
 import {FPS, totalFrames} from './timing';
 import type {Spot as SpotT} from './types';
-import carrefour from './spots/carrefour.json';
-import leclerc from './spots/leclerc.json';
-import lidl from './spots/lidl.json';
-import auchan from './spots/auchan.json';
 
-// one entry per catalogue config written by extractor/make_spot.py
-const SPOTS: Record<string, SpotT> = {
-  Carrefour: carrefour as unknown as SpotT,
-  Leclerc: leclerc as unknown as SpotT,
-  Lidl: lidl as unknown as SpotT,
-  Auchan: auchan as unknown as SpotT,
+// every config written by extractor/make_spot.py into ./spots becomes <Name>-16x9 and <Name>-9x16
+declare const require: {
+  context: (dir: string, deep: boolean, filter: RegExp) => {keys: () => string[]; (key: string): unknown};
 };
+const ctx = require.context('./spots', false, /\.json$/);
+const SPOTS: Record<string, SpotT> = Object.fromEntries(
+  ctx.keys().map((key) => {
+    const name = key.replace(/^\.\//, '').replace(/\.json$/, '');
+    return [name.charAt(0).toUpperCase() + name.slice(1), ctx(key) as SpotT];
+  }),
+);
 
 export const Root: React.FC = () => (
   <>

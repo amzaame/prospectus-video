@@ -1,0 +1,14 @@
+{
+  "name": "prospectus-video",
+  "description": "Turn supermarket catalogues into animated promo videos with Claude Code.",
+  "owner": {
+    "name": "Amecharhamza"
+  },
+  "plugins": [
+    {
+      "name": "prospectus-video",
+      "source": "./",
+      "description": "Catalogue PDF or flyer to animated promo videos in the retailer's brand style."
+    }
+  ]
+}
